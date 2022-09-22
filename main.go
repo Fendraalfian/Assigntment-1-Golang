@@ -7,7 +7,7 @@ import (
 )
 
 type student struct {
-	noPeserta           int
+	absen		    int
 	nama                string
 	alamat              string
 	pekerjaan           string
@@ -26,7 +26,7 @@ func printData(arguments []string) {
 	startIndex, _ := strconv.Atoi(arguments[1])
 
 	for _, value := range dummyData() {
-		if value.noPeserta == startIndex {
+		if value.absen == startIndex {
 			fmt.Println("=====Data Siswa====")
 			fmt.Println("Nama:", value.nama)
 			fmt.Println("Alamat:", value.alamat)
